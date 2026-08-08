@@ -18,7 +18,7 @@ local ScreenGui = {
 	UIPadding = Instance.new("UIPadding"),
 }
 
-local Screen = gethui():FindFirstChild(ScreenGui.ScreenGui.Name)
+local Screen = gethui():FindFirstChild("LinuxTerminal")
 if Screen then
 	Screen:Destroy()
 end
@@ -26,6 +26,7 @@ end
 function Lib:CreateWindow( title : string )
 
 	ScreenGui.ScreenGui.Parent = gethui():WaitForChild("PlayerGui")
+	ScreenGui.ScreenGui.Name = "LinuxTerminal"
 	ScreenGui.Frame.Parent = ScreenGui.ScreenGui
 	ScreenGui.TextFrame.Parent = ScreenGui.Frame
 	ScreenGui.UIStroke.Parent = ScreenGui.TextFrame
