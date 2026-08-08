@@ -171,7 +171,7 @@ function Lib:CreateWindow( title : string )
 	ScreenGui.OutputFrame.Name = "OutputFrame"
 	ScreenGui.OutputFrame.ZIndex = 1
 	ScreenGui.OutputFrame.Position = UDim2.new(0.0639204532, 0, 0.133858263, 0)
-	ScreenGui.OutputFrame.Size = UDim2.new(0, 619, 0, 261)
+	ScreenGui.OutputFrame.Size = UDim2.new(0, 1000, 0, 261)
 	ScreenGui.OutputFrame.BackgroundColor3 = Color3.fromRGB(16,16,16)
 	ScreenGui.OutputFrame.BackgroundTransparency = 0
 	ScreenGui.OutputFrame.Visible = true
