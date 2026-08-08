@@ -27,6 +27,7 @@ function Lib:CreateWindow( title : string )
 
 	ScreenGui.ScreenGui.Parent = gethui():WaitForChild("PlayerGui")
 	ScreenGui.ScreenGui.Name = "LinuxTerminal"
+	print(ScreenGui.ScreenGui:GetFullName())
 	ScreenGui.Frame.Parent = ScreenGui.ScreenGui
 	ScreenGui.TextFrame.Parent = ScreenGui.Frame
 	ScreenGui.UIStroke.Parent = ScreenGui.TextFrame
