@@ -1,5 +1,3 @@
-local CoreGui = game:GetService("CoreGui")
-
 local Lib = {}
 
 local ScreenGui = {
@@ -20,14 +18,14 @@ local ScreenGui = {
 	UIPadding = Instance.new("UIPadding"),
 }
 
-local Screen = CoreGui:FindFirstChild(ScreenGui.ScreenGui.Name)
+local Screen = gethui():FindFirstChild(ScreenGui.ScreenGui.Name)
 if Screen then
 	Screen:Destroy()
 end
 
 function Lib:CreateWindow( title : string )
 
-	ScreenGui.ScreenGui.Parent = CoreGui:WaitForChild("PlayerGui")
+	ScreenGui.ScreenGui.Parent = gethui():WaitForChild("PlayerGui")
 	ScreenGui.Frame.Parent = ScreenGui.ScreenGui
 	ScreenGui.TextFrame.Parent = ScreenGui.Frame
 	ScreenGui.UIStroke.Parent = ScreenGui.TextFrame
