@@ -50,7 +50,7 @@ function Lib:CreateWindow( title : string )
 
 	ScreenGui.Frame.Name = "Frame"
 	ScreenGui.Frame.ZIndex = 1
-	ScreenGui.Frame.Position = UDim2.new(0.466401589, 0, 0.247566059, 0)
+	ScreenGui.Frame.Position = UDim2.new(0.326401589, 0, 0.247566059, 0)
 	ScreenGui.Frame.Size = UDim2.new(0, 704, 0, 381)
 	ScreenGui.Frame.BackgroundColor3 = Color3.fromRGB(16,16,16)
 	ScreenGui.Frame.BackgroundTransparency = 0
